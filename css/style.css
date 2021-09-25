@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgba(208, 218, 26, 0.514);
+    overflow: hidden;
+}
+
+.row
+{
+    position: relative;
+    z-index: 5;
+}
+
+.col-3{
+    border-left: 3px solid #000;
+}
+input[type=radio] {
+	display: none;
+}
+.btn_size{
+    border: 1px solid rgb(36, 180, 0);
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    margin-right: 5px;
+    color: rgb(26, 16, 220);
+    font-weight: bold;
+}
+span{
+    margin: 0;
+}
+
+.js-input-wrapper{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.js-input-wrapper label{
+    width: 220px;
+    margin-bottom: 5px;
+}
+
+.on-top, .plus-push {
+    list-style-type: none;
+}
+
+b, h1
+{
+    color: blue;
+    text-shadow: 1px 1px 1px rgb(247, 2, 2);
+}
+
+.style
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 238, 255);
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
+.img, .img1, .img2, .img3, .img4
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.img
+{
+    bottom: 0px;
+    right: 160px;
+    animation: img 5s linear infinite;
+}
+
+@keyframes img{
+    0%{
+        transform: scale(0.2);
+    }
+    20%{
+        transform: scale(0.4) rotateY(-20deg);
+    }
+    40%{
+        transform: scale(0.6) rotateY(-30deg) translateX(40px);
+    }
+    60%{
+        transform: scale(0.8) rotateY(-40deg) translateX(80px);
+    }
+    80%{
+        transform: scale(1) rotateY(-50deg) translateX(120px);
+    }
+   100%{
+        transform: scale(1.2) rotateY(-60deg) translateX(160px);
+        right: -200px;
+    }
+}
+
+.img1
+{
+    top: 10px;
+    right: 0px;
+    transform: rotate(10deg);
+}
+
+.img2
+{
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: 120px;
+    animation: img2 10s linear infinite;
+}
+
+@keyframes img2{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.img3
+{
+    bottom: 0;
+    left: 300px;
+}
+
+
+
+.div
+{
+    position: absolute;
+}
+
+.div
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(255, 230, 0);
+    background-color: rgba(252, 248, 3, 0.172);
+    left: 100px;
+    bottom: 100px;
+    animation: div 5s linear infinite alternate;
+}
+
+@keyframes div{
+    to{
+        transform: rotateY(360deg) scale(0.1) rotate(50deg);
+    }
+}
